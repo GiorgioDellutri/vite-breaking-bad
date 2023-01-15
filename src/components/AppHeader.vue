@@ -35,9 +35,11 @@ export default {
 
 <template>
     <header>
-        <img src="../assets/img/Yu-Gi-Oh logo.webp" alt="">
+        <div class="count-banner">
+            <p class="card-count">Found {{ store.length }} card</p>
+        </div>
+        <img src="../assets/img/Yu-Gi-Oh logo.webp" alt="logo">
     </header>
-
 </template>
 
 
@@ -52,6 +54,16 @@ header {
         margin-left: .5rem;
         height: 100%;
         line-height: 10px;
+    }
+
+    div.count-banner {
+        padding: 1rem;
+        background-color: #212529;
+
+        p.card-count {
+            font-size: 1.5rem;
+            color: whitesmoke;
+        }
     }
 }
 </style>
