@@ -1,5 +1,4 @@
 <script>
-import axios from 'axios';
 import { store } from '../store';
 
 export default {
@@ -8,27 +7,6 @@ export default {
         return {
             store
         }
-    },
-    methods: {
-        getCardList() {
-            axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=50&offset=0', {
-                params: {
-                }
-            })
-                .then((response) => {
-                    console.log(response.data.data);
-                    this.store.cardList = response.data.data;
-                    console.log(this)
-
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-        }
-    },
-
-    created() {
-        this.getCardList()
     },
 }
 </script>
