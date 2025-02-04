@@ -13,7 +13,7 @@ export default {
 
 <template>
     <header>
-        <img src="../assets/img/Yu-Gi-Oh logo.webp" alt="logo">
+        <img src="../assets/img/Yu-Gi-Oh-logo.webp" alt="logo">
     </header>
     <div class="count-banner">
         <p class="card-count">Found {{ store.cardList.length }} card</p>
